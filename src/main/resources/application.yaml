@@ -1,3 +1,6 @@
 spring:
   application:
     name: mongoo-life-api
+
+  profiles:
+    default: local

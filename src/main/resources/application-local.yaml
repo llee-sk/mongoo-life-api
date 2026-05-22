@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:33066/mongoo_life?serverTimezone=UTC&characterEncoding=UTF-8}
+    username: ${DB_USERNAME:mongoo}
+    password: ${DB_PASSWORD:mongoo_password}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        jdbc:
+          time_zone: UTC
+    show-sql: true
+    open-in-view: false

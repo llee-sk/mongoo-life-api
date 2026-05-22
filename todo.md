@@ -2,15 +2,10 @@
 
 ## 1. Project Baseline
 - [ ] `application.yaml` 프로필 구조 설계
-  - [ ] local
-  - [ ] test
-  - [ ] prod placeholder
-- [ ] Docker Compose로 MySQL local 환경 준비
-- [ ] DB timezone, charset, collation 정책 결정
-- [ ] JPA ddl-auto 전략 결정
-  - [ ] local: create 또는 update 검토
-  - [ ] prod: validate 권장
-- [ ] ERD 기준 테이블과 Entity 설계 차이점 정리
+- [x] Docker Compose로 MySQL local 환경 준비
+- [x] JPA ddl-auto 전략 결정
+  - local: create 또는 update 검토
+  - prod: validate 권장
 
 ## 2. Common Foundation
 - [ ] `global.response.ApiResponse` 설계
