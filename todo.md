@@ -1,20 +1,20 @@
 # mongoo-life-api MVP Todo
 
 ## 1. Project Baseline
-- [ ] `application.yaml` 프로필 구조 설계
+- [x] `application.yaml` 프로필 구조 설계
 - [x] Docker Compose로 MySQL local 환경 준비
 - [x] JPA ddl-auto 전략 결정
   - local: create 또는 update 검토
   - prod: validate 권장
 
 ## 2. Common Foundation
-- [ ] `global.response.ApiResponse` 설계
-- [ ] `global.exception.ErrorCode` 설계
+- [x] `global.response.ApiResponse` 설계
+- [x] `global.exception.ErrorCode` 설계
 - [ ] `global.exception.CustomException` 설계
-- [ ] `global.exception.GlobalExceptionHandler` 설계
+- [x] `global.exception.GlobalExceptionHandler` 설계
 - [ ] Validation 예외 응답 포맷 설계
-- [ ] 인증/인가 예외 응답 포맷 설계
-- [ ] `BaseTimeEntity` 설계
+- [] 인증/인가 예외 응답 포맷 설계
+- [x] `BaseTimeEntity` 설계
 - [ ] 공통 enum 저장 전략 결정
   - [ ] Java enum 사용
   - [ ] DB는 `VARCHAR`
@@ -61,10 +61,8 @@ domain/{domain}
 
 ## 4. User / Auth Domain
 
-- [ ] `User` Entity 설계
-- [ ] `Provider` enum 설계
-  - [ ] LOCAL
-  - [ ] GOOGLE
+- [x] `User` Entity 설계
+- [x] `Provider` enum 설계
 - [ ] `RefreshToken` Entity 설계
 - [ ] `UserRepository` 설계
 - [ ] `RefreshTokenRepository` 설계
@@ -86,10 +84,10 @@ domain/{domain}
 ## 5. Security
 
 - [ ] `SecurityConfig` 설계
-- [ ] `JwtTokenProvider` 설계
-- [ ] `JwtAuthenticationFilter` 설계
+- [x] `JwtTokenProvider` 설계
+- [x] `JwtAuthenticationFilter` 설계
 - [ ] `CustomUserDetails` 설계
-- [ ] `CustomUserDetailsService` 설계
+- [x] `CustomUserDetailsService` 설계
 - [ ] 인증 실패 핸들러 설계
 - [ ] 인가 실패 핸들러 설계
 - [ ] CORS 정책 설계

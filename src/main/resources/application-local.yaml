@@ -15,3 +15,8 @@ spring:
           time_zone: UTC
     show-sql: true
     open-in-view: false
+
+jwt:
+  secret: ${JWT_SECRET}
+  access-token-validity-in-seconds: 1800
+  refresh-token-validity-in-seconds: 604800
