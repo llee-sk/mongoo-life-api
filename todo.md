@@ -15,14 +15,10 @@
 - [ ] Validation 예외 응답 포맷 설계
 - [] 인증/인가 예외 응답 포맷 설계
 - [x] `BaseTimeEntity` 설계
-- [ ] 공통 enum 저장 전략 결정
-  - [ ] Java enum 사용
-  - [ ] DB는 `VARCHAR`
 - [ ] 시간 계산 테스트를 위한 `Clock` Bean 도입 검토
 
 ## 3. Package Structure
-
-- [ ] 기본 패키지 구조 생성
+- [x] 기본 패키지 구조 생성
 
 ```text
 com.mongoo.life
@@ -47,7 +43,7 @@ com.mongoo.life
     └── collection
 ```
 
-- [ ] 각 도메인 내부 구조 기준 정리
+- [x] 각 도메인 내부 구조 기준 정리
 
 ```text
 domain/{domain}
@@ -63,9 +59,9 @@ domain/{domain}
 
 - [x] `User` Entity 설계
 - [x] `Provider` enum 설계
-- [ ] `RefreshToken` Entity 설계
-- [ ] `UserRepository` 설계
-- [ ] `RefreshTokenRepository` 설계
+- [x] `RefreshToken` Entity 설계
+- [x] `UserRepository` 설계
+- [x] `RefreshTokenRepository` 설계
 - [ ] `RefreshTokenStore` 인터페이스 설계
   - [ ] MVP: DB 구현체
   - [ ] Future: Redis 구현체 확장 포인트
